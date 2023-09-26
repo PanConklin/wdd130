@@ -22,7 +22,15 @@ body {
   p {
     padding: 10px;
   }
+  .main-para {
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
   footer {
     background-color: steelblue;
     color: white;
   }
+  #active {
+    background-color: white;
+    color: steelblue;
+}
