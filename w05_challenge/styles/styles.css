@@ -1,0 +1,16 @@
+body {
+    background-color: grey;
+}
+#background {
+    width: 100%;
+    margin: 0;
+}
+.icon {
+    border: 35px solid #383838;
+    border-radius: 50%;
+}
+.grid_container {
+    padding-top: 75px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
