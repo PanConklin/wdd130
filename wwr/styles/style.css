@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Koulen&family=Montserrat+Alternates:ital,wght@1,700&family=Open+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montaga&display=swap');
+
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
+}
+
+#logo-link {
+    padding-top: 5px;
 }
 
 
@@ -9,6 +17,7 @@
 /*Dimensions*/
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 #hero-img {
     width: 100%;
@@ -20,8 +29,9 @@
 /*coloring*/
 nav a{
     text-align: center;
-    color: #c7c9b1;
+    color: #294963;
     text-decoration: none;
+    padding: 35px;
 }
 
 #hero-msg h1 {
@@ -39,7 +49,9 @@ nav a{
 main section {
     text-align: center;
 }
-
+main section img {
+    box-sizing: border-box;
+}
 #background {
     height: 725px;
     background-color: #7fad92;
@@ -47,10 +59,17 @@ main section {
 
 body {
     background-color: #c7c9b1;
+    font-family: "Montserrat Alternates", "Montaga", sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    margin: 0;
 }
 
 header {
-    background-color: #294963;
+    background-color: #c7c9b1;
 }
 
 nav a:hover {
@@ -58,10 +77,21 @@ nav a:hover {
     color: #294963;
 }
 
+.card-img{
+    border: 10px solid #294963;
+}
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+
 .book, .join {
     background-color: #294963;
     color: #c7c9b1;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover {
@@ -71,11 +101,23 @@ nav a:hover {
 
 .msg {
     background-color: #7fad92;
+    line-height: 1.5em;
+    padding: 35px;
+}
+.msg p {
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 
 footer a{
     background-color: #294963;
     text-decoration: none;
+}
+
+.home-title {
+    font-family: "Montserrat Alternates", "Montaga", sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
 }
 
 .home-title, h4 {
@@ -85,10 +127,19 @@ footer a{
 section h2, p {
     color: #294963;
 }
-footer p {
+footer {
     font-size: 1.2em;
+    color: #c7c9b1;
+    margin-top: 200px;
+    padding: 25px 50px
 }
 
+footer .social img {
+    padding-top: 15px;
+}
+.footer-links {
+    color: #7fad92;
+}
 footer p a:hover {
     text-decoration: underline;
 }
