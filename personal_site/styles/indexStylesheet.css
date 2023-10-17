@@ -1,0 +1,67 @@
+body{
+    background-color: #C3DAC3;
+    margin: 0;
+}
+#space-box{
+    padding: 50px;
+}
+
+
+/* BUTTON LINKS */
+.button-box{
+   display: flex;
+   justify-content: center;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 70px;
+    border-radius: 50px;
+    width: 500px;
+    color:#251605;
+    background-color: #3D7068;
+    box-shadow: 12px 12px 10px #251605;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.button:hover{
+    transform: scale(1.2);
+}
+
+
+
+/* FOOTER SECTION */
+.social{
+    display: flex;
+    justify-content: center;
+}
+.social a{
+    font-size: 0;
+    padding: 20px;
+    padding-top: 90px;
+}
+.app{
+    border-radius: 15px;
+}
+.app:hover{
+    transform: scale(1.2);
+}
+.final-links{
+    color:  #251605;
+    display: flex;
+    justify-content: center;
+    padding: 10px
+}
+.bottom{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    background-color: #957964;
+}
