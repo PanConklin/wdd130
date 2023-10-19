@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.red {
+    background-color: red;
+    z-index: 1; /* Red box is stacked above */
+}
+
+.blue {
+   /* background-color: blue;
+    z-index: 2; /* Blue box is stacked on top of the red box */
+}
