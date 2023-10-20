@@ -1,57 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Add a Recipe</title>
+    <title>Recipe Entry</title>
     <link rel="stylesheet" href="styles/addRecipeStylesheet.css" />
   </head>
   <body>
-    <!--HEADER SECTION-->
+    <a href="index.html">
+      <img
+        class="logo"
+        src="images/logo-transparent-png.png"
+        alt="Cookbook Logo"
+        width="600px"
+      />
+    </a>
+    <!--
+    <h1>Recipe Entry</h1>
+
+    <label><strong>Enter Your Recipe:</strong></label>
+
+    <label></label>
+-->
+
     <header>
-      <a href="index.html">
-        <img
-          class="logo"
-          src="images/logo-transparent-png.png"
-          alt="Cookbook Logo"
-          width="400px"
-        />
-      </a>
+      <h1>Recipe Name</h1>
+      <p>
+        Prep Time: <span id="prep-time"></span> | Cook Time:
+        <span id="cook-time"></span>
+      </p>
     </header>
-    <!--COLOR SCHEME
-      #957964
-      #251605
-      #3D7068
-      #C3DAC3
-      #D5ECD4
-    -->
 
-    <!--MAIN SECTION-->
-    <h1>Enter a New Recipe</h1>
-    <form action="process_recipe.php" method="POST">
-      <label for="recipeName">Recipe Name:</label>
-      <input type="text" id="recipeName" name="recipeName" required />
-      <br />
+    <!--SECTION FOR THE FIRST BUTTON AND INGREDIENT LIST-->
+    <main>
+      <section id="ingredients">
+        <h2>Ingredients</h2>
+        <div id="input-container">
+          <ul id="ingredient-list">
+            <li>
+              <input id="ingredientBox" type="text" placeholder="Ingredient" />
+              <br />
+            </li>
+          </ul>
+          <button id="addIngredientButton">Add Ingredient</button>
+        </div>
+      </section>
 
-      <label for="ingredients">Ingredients:</label>
-      <textarea
-        id="ingredients"
-        name="ingredients"
-        rows="4"
-        required
-      ></textarea>
-      <br />
+      <!--SECTION FOR THE SECOND BUTTON AND INSTRUCTION LIST-->
+      <section id="instructions">
+        <h2>Instructions</h2>
+        <div id="instruction-container">
+          <ol id="instruction-list">
+            <li>
+              <input type="text" placeholder="Enter the first step here" />
+            </li>
+          </ol>
+          <button id="addInstructionButton">Add Step</button>
+        </div>
+      </section>
+    </main>
+    <!--SECTION FOR THE TEXT ENTRY NOTES-->
+    <section id="notes">
+      <h2>Recipe Notes</h2>
+      <p>
+        <textarea
+          placeholder="Here, you can add any additional information, tips, or variations for the recipe."
+        ></textarea>
+      </p>
+    </section>
 
-      <label for="instructions">Preparation Instructions:</label>
-      <textarea
-        id="instructions"
-        name="instructions"
-        rows="6"
-        required
-      ></textarea>
-      <br />
+    <!--FOOTER SECTION FOR THE 2nd WEBPAGE-->
+    <footer>
+      <div class="social">
+        <a href="https://facebook.com" target="_blank"
+          ><img class="app" src="images/facebook.png" alt="fb icon" height="40"
+        /></a>
+        <a href="https://twitter.com" target="_blank">
+          <img
+            class="app"
+            src="images/twitter.png"
+            alt="twitter icon"
+            height="40"
+          />
+        </a>
+        <a href="https://instagram.com" target="_blank">
+          <img
+            class="app"
+            src="images/instagram.png"
+            alt="instagram icon"
+            height="40"
+          />
+        </a>
+      </div>
 
-      <input type="submit" value="Submit Recipe" />
-    </form>
+      <div class="final-links">
+        <p><a href="site-plan-rafting.html">Site Plan</a></p>
+        <p><a href="contactus.html">Contact Us</a></p>
+      </div>
+      <div class="bottom">
+        <p>Conklin Cookbook &copy; 2023 - Brett Conklin</p>
+      </div>
+    </footer>
+    <script src="scripts/final.js"></script>
   </body>
 </html>
